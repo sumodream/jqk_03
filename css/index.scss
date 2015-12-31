@@ -1,0 +1,320 @@
+@import 'commonAnimations.css';
+/* p1 */
+.p1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 330px;
+  height: 410px;
+}
+.p1zz {
+    background: url("../img/p1zz.png") no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 459px;
+    width: 652px;
+    height: 320px;
+    z-index: 999;
+    margin-left: -326px;
+}
+.bt
+{
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    width: 426px;
+    height: 141px;
+    margin-left: -213px;
+    border: 10px solid green;
+}
+.btp1
+{
+    @extend .bt;
+}
+/* p2 */
+.mainpic
+{
+    position: absolute;
+    border: 10px solid green;
+}
+.p2p1
+{
+    top: 203px;
+    left: 193px;
+    width: 326px;
+    height: 153px; 
+    @extend .mainpic;
+}
+.p2p1bb {
+    background: url("../img/p2p1bb.png") no-repeat;
+    position: absolute;
+    left: 207px;
+    top: 206px;
+    width: 286px;
+    height: 155px;
+}
+.p2p2
+{
+    top: 425px;
+    left: 218px;
+    width: 202px;
+    height: 470px; 
+    @extend .mainpic;
+}
+.p2p2bb {
+    background: url("../img/p2p2bb.png") no-repeat;
+    position: absolute;
+    left: 192px;
+    top: 345px;
+    width: 266px;
+    height: 553px;
+}
+.p2p3
+{
+    top: 766px;
+    left: 497px;
+    width: 190px;
+    height: 190px;  
+    @extend .mainpic;
+}
+.p2p3bb {
+    background: url("../img/p2p3bb.png") no-repeat;
+    position: absolute;
+    left: 498px;
+    top: 775px;
+    width: 100px;
+    height: 122px;
+}
+/* p3 */
+.p3p1{
+    top: 416px;
+    left: 354px;
+    width: 143px;
+    height: 546px; 
+    z-index: 996;   
+    @extend .mainpic;
+}
+.p3p1bb {
+    background: url("../img/p3p1bb.png") no-repeat;
+    position: absolute;
+    left: 365px;
+    top: 392px;
+    width: 196px;
+    height: 165px;
+}
+.p3p2{
+    top: 450px;
+    left: 540px;
+    width: 190px;
+    height: 190px;
+    z-index: 996;
+    @extend .mainpic;
+}
+.p3p2bb {
+  background: url("../img/p3p2bb.png") no-repeat;
+  position: absolute;
+  left: 543px;
+  top: 467px;
+  width: 77px;
+  height: 68px;
+}
+.p3p3{
+    top: 158px;
+    left: 87px;
+    width: 638px;
+    height: 202px;
+    @extend .mainpic;
+}
+.p3p3bb {
+  background: url("../img/p3p3bb.png") no-repeat;
+    position: absolute;
+    left: 127px;
+    top: 173px;
+    width: 601px;
+    height: 368px;
+}
+/* p4 */
+.p4p1{
+    top: 451px;
+    left: 371px;
+    width: 242px;
+    height: 207px;
+    @extend .mainpic;
+    z-index: 99;
+}
+.p4p1bb {
+    background: url("../img/p4p1bb.png") no-repeat;
+    position: absolute;
+    left: 310px;
+    top: 418px;
+    width: 302px;
+    height: 249px;
+}
+.p4p2{
+    top: 572px;
+    left: 121px;
+    width: 200px;
+    height: 200px;
+    z-index: 996;
+    @extend .mainpic;
+}
+.p4p2bb {
+    background: url("../img/p4p2bb.png") no-repeat;
+    position: absolute;
+    left: 170px;
+    top: 621px;
+    width: 89px;
+    height: 94px;
+}
+.p4p3{
+    top: 851px;
+    left: 172px;
+    width: 482px;
+    height: 172px;
+    @extend .mainpic;
+}
+.p4p3bb {
+    background: url("../img/p4p3bb.png") no-repeat;
+    position: absolute;
+    left: 220px;
+    top: 843px;
+    width: 367px;
+    height: 148px;
+}
+.p4p4{
+    top: 209px;
+    left: 175px;
+    width: 469px;
+    height: 202px;
+    @extend .mainpic;
+}
+.p4p4bb{
+  background: url("../img/p4p4bb.png") no-repeat;
+  position: absolute;
+  left: 170px;
+  top: 196px;
+  width: 489px;
+  height: 227px;
+}
+.pwordzz {
+  position: absolute;
+  background: black;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  z-index: 5; 
+top:0;
+left: 0;}
+.pinfo {
+    position: absolute;
+    background: url("../img/info.png") no-repeat;
+    width: 748px;
+    height: 770px;
+    left: 50%;
+    bottom: 310px;
+    margin-left: -374px;
+    z-index: 999;
+}
+.word {
+    position: absolute;
+    width: 640px;
+    height: 540px;
+    left: 50%;
+    margin-left: -320px;
+    bottom: 100px;
+}
+.wp2p1{
+    @extend .word;
+    background: url("../img/p2p1.png") no-repeat;
+}
+.wp2p2{
+    @extend .word;
+    background: url("../img/p2p2.png") no-repeat;
+}
+.wp2p3{
+    @extend .word;
+    background: url("../img/p2p3.png") no-repeat;
+}
+.wp3p1{
+    @extend .word;
+    background: url("../img/p3p1.png") no-repeat;
+}
+.wp3p2{
+    @extend .word;
+    background: url("../img/p3p2.png") no-repeat;
+}
+.wp3p3{
+    @extend .word;
+    height: 580px;
+    background: url("../img/p3p3.png") no-repeat;
+    bottom: 77px;
+}
+.wp4p1{
+    @extend .word;
+    background: url("../img/p4p1.png") no-repeat;
+}
+.wp4p2{
+    @extend .word;
+    background: url("../img/p4p2.png") no-repeat;
+}
+.wp4p3{
+    @extend .word;
+    background: url("../img/p4p3.png") no-repeat;
+}
+.wp4p4{
+    @extend .word;
+    background: url("../img/p4p4.png") no-repeat;
+}
+.pclose {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 629px;
+    left: 585px;
+    border: 10px solid green;
+}
+/* p5 */
+.p5{
+    position: absolute;
+    width: 194px;
+    height: 127px;
+    bottom: 231px;
+    border: 10px solid green;
+}
+.reload{
+    @extend .p5;
+    left: 54px;
+}
+.before{
+    @extend .p5;
+    left: 308px;
+}
+.share{
+    @extend .p5;
+    left: 561px;
+}
+.p5zz {
+    position: absolute;
+    width: 121px;
+    height: 346px;
+    bottom: 632px;
+    background: url("../img/p5zz.png") no-repeat;
+    z-index: 999;
+    left: 70px;
+}
+.shareto{
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: .85;
+    position: absolute;
+    z-index: 2;
+}
+.p5_qrcode {
+    position: absolute;
+    left: 50%;
+    top: 341px;
+    width: 330px;
+    height: 410px;
+    margin-left: -165px;
+}
