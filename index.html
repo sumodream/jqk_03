@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="cache-control" content="no-cache">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>鲸奇客|大家来找事儿</title>
+</head>
+<style type="text/css" id="slide"></style>
+
+<body style="overflow: hidden;">
+    <!-- 预加载 -->
+    <div id="loading">
+        <div style="position:absolute;top:0;left:0;height:100%;width:100%;background:white;"> </div>
+        <div class="">
+            <img src="img/loading.gif" style="width:100%;position: absolute;">
+        </div>
+    </div>
+    <!-- 预加载  end -->
+    <!-- 手机竖屏提醒 -->
+    <div id="orientLayer" class="mod-orient-layer">
+        <div class="mod-orient-layer__content"><i class="icon-wx mod-orient-layer__icon-orient"></i>
+            <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+        </div>
+    </div>
+    <!-- 手机竖屏提醒  end -->
+    <!-- 页面内容-->
+    <div id="pageWrap">
+        <div class="page page-1-1 page-current">
+            <div class="zoom-page" style="z-index:1;">
+                <img src="img/btp1.png" class="btp1 goTada">
+                <img src="img/p1.png" class="background">
+            </div>
+        </div>
+        <div class="page page-2-1 hide">
+            <div style="position:absolute;top:0;left:0;height:100%;width:100%;background:#000;opacity:0.7;"> </div>
+            <div class="zoom-page" style="z-index:9;">
+                <img class="tips" id="tips1" src="img/0-3.png">
+                <img src="img/mainpic1.png" class="background" />
+                <div class="addpic1">
+                    <div class="p2pic1 p2p1 unselect"></div>
+                    <div class="p2pic1 p2p1bb selected hide "></div>
+                    <div class="pinfo pinfopic1 hide" style="z-index:999;">
+                        <div class="wp2p1"></div>
+                        <div class="pclose pclose1"></div>
+                    </div>
+                </div>
+                <div class="addpic1">
+                    <div class="p2pic2 p2p2 unselect"></div>
+                    <div class="p2pic2  p2p2bb selected hide"></div>
+                    <div class="pinfo pinfopic2 hide">
+                        <div class="wp2p2"></div>
+                        <div class="pclose pclose1"></div>
+                    </div>
+                </div>
+                <div class="addpic1">
+                    <div class="p2pic3 p2p3 unselect"></div>
+                    <div class="p2pic3 p2p3bb selected hide"></div>
+                    <div class="pinfo pinfopic3 hide">
+                        <div class="wp2p3"></div>
+                        <div class="pclose pclose1"></div>
+                    </div>
+                </div>
+                <div class="pwordzz hide"></div>
+                <div class="p1zz hide"></div>
+            </div>
+        </div>
+        <div class="page page-3-1 hide">
+            <div style="position:absolute;top:0;left:0;height:100%;width:100%;background:#000;opacity:0.7;"> </div>
+            <div class="zoom-page">
+                <img class="tips" id="tips2" src="img/0-3.png" />
+                <img src="img/mainpic2.png" class="background" />
+                <div class="addpic2">
+                    <div class="p3pic1 p3p1 unselect"></div>
+                    <div class="p3pic1 p3p1bb selected hide"></div>
+                    <div class="pinfo pinfopic1 hide">
+                        <div class="wp3p1"></div>
+                        <div class="pclose pclose2"></div>
+                    </div>
+                </div>
+                <div class="addpic2">
+                    <div class="p3pic2 p3p2 unselect"></div>
+                    <div class="p3pic2 p3p2bb selected hide"></div>
+                    <div class="pinfo pinfopic2 hide">
+                        <div class="wp3p2"></div>
+                        <div class="pclose pclose2"></div>
+                    </div>
+                </div>
+                <div class="addpic2">
+                    <div class="p3pic3 p3p3 unselect"></div>
+                    <div class="p3pic3 p3p3bb selected hide"></div>
+                    <div class="pinfo pinfopic3 hide">
+                        <div class="wp3p3"></div>
+                        <div class="pclose pclose2"></div>
+                    </div>
+                </div>
+                <div class="pwordzz hide"></div>
+            </div>
+        </div>
+        <div class="page page-4-1 hide">
+            <div style="position:absolute;top:0;left:0;height:100%;width:100%;background:#000;opacity:0.7;"> </div>
+            <div class="zoom-page">
+                <img class="tips" id="tips3" src="img/0-4.png" />
+                <img src="img/mainpic3.png" class="background" />
+                <div class="addpic3">
+                    <div class="p4pic1 p4p1 unselect"></div>
+                    <div class="p4pic1 p4p1bb selected hide"></div>
+                    <div class="pinfo pinfopic1 hide">
+                        <div class="wp4p1"></div>
+                        <div class="pclose pclose3"></div>
+                    </div>
+                </div>
+                <div class="addpic3">
+                    <div class="p4pic2 p4p2 unselect"></div>
+                    <div class="p4pic2 p4p2bb selected hide"></div>
+                    <div class="pinfo pinfopic2 hide">
+                        <div class="wp4p2"></div>
+                        <div class="pclose pclose3"></div>
+                    </div>
+                </div>
+                <div class="addpic3">
+                    <div class="p4pic3 p4p3 unselect"></div>
+                    <div class="p4pic3 p4p3bb selected hide"></div>
+                    <div class="pinfo pinfopic3 hide">
+                        <div class="wp4p3"></div>
+                        <div class="pclose pclose3"></div>
+                    </div>
+                </div>
+                <div class="addpic3">
+                    <div class="p4pic4 p4p4 unselect"></div>
+                    <div class="p4pic4 p4p4bb selected hide"></div>
+                    <div class="pinfo pinfopic4 hide">
+                        <div class="wp4p4"></div>
+                        <div class="pclose pclose3"></div>
+                    </div>
+                </div>
+                <div class="pwordzz hide"></div>
+            </div>
+        </div>
+        <div class="page page-5-1 hide">
+            <div style="position:absolute;top:0;left:0;height:100%;width:100%;background:#000;opacity:0.85;"> </div>
+            <div class="zoom-page">
+                <img src="img/p5.png" class="background" />
+                <img src="img/p5_qrcode.png" class="p5_qrcode">
+                <div class="reload"></div>
+                <div class="before"></div>
+                <div class="share">
+                    <div class="shareimg hide p5zz"></div>
+                </div>
+                <div class="shareto hide"></div>
+            </div>
+        </div>
+        <audio id="audio" loop="loop" src="img/sound.mp3" style="display:none;"></audio>
+    </div>
+    <!-- 页面内容  end-->
+    <!-- cnzz统计-->
+    <div style="display: none;">
+        <script src="http://s4.cnzz.com/z_stat.php?id=1256713808&web_id=1256713808" language="JavaScript"></script>
+    </div>
+    <script>
+        var _czc = _czc || [];
+        _czc.push(["_setAccount", "1256713808"]);
+    </script>
+    <!-- cnzz统计  end-->
+</body>
+<script src="js/zepto.min.js"></script>
+<script src="js/pxloader-all.min.js"></script>
+<script src="js/init.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    var arrya = [
+        "0-3.png",
+        "1-3.png",
+        "2-3.png",
+        "3-3.png",
+        "0-4.png",
+        "1-4.png",
+        "2-4.png",
+        "3-4.png",
+        "4-4.png",
+        "btp1.png",
+        "info.png",
+        "p1.png",
+        "p1hand.png",
+        "p1zz1.png",
+        "p2p1.png",
+        "p2p2.png",
+        "p2p3.png",
+        "p3p1.png",
+        "p3p2.png",
+        "p3p3.png",
+        "p4p1.png",
+        "p4p2.png",
+        "p4p3.png",
+        "p4p4.png",
+        "p2p1bb.png",
+        "p2p2bb.png",
+        "p2p3bb.png",
+        "p3p1bb.png",
+        "p3p2bb.png",
+        "p3p3bb.png",
+        "p4p1bb.png",
+        "p4p2bb.png",
+        "p4p3bb.png",
+        "p4p4bb.png",
+        "p5.png",
+        "p5_qrcode.png",
+        "p5zz.png",
+        "mainpic1.png",
+        "mainpic2.png",
+        "mainpic3.png",
+        "sound.mp3"
+    ];
+    var arryb = [
+        "loading.gif"
+    ];
+    var baseUrl = 'img/',
+        loader = new PxLoader();
+    var loaderFile = new PxLoader();
+    for (var i = 0; i < arrya.length; i++) {
+        var imageUrl = baseUrl + arrya[i];
+        pxImage = new PxLoaderImage(imageUrl);
+        pxImage.imageNumber = i + 1;
+        loaderFile.add(pxImage);
+    };
+    for (var i = 0; i < arryb.length; i++) {
+        var imageUrl = baseUrl + arryb[i];
+        pxImage = new PxLoaderImage(imageUrl);
+        pxImage.imageNumber = i + 1;
+        loader.add(pxImage);
+    };
+    loader.start();
+    loaderFile.addProgressListener(function(e) {
+        var percent = Math.round((e.completedCount / e.totalCount) * 100);
+    });
+    loaderFile.addCompletionListener(function(e) {
+        $("#loading").remove();
+        $("#pageWrap").css("display", "block");
+        audio.play();
+    });
+    loader.addCompletionListener(function(e) {
+        $("#loading").show();
+        loaderFile.start();
+    });
+    loader.addProgressListener(function(e) {});
+</script>
+<script>
+    var wxTitle = "我打赌，你绝对没我会找事儿！";
+    var wxLink = "http://h5.whaledream.com/jqk_03/index.html";
+    var imgUrl = "http://h5.whaledream.com/jqk_03/icon.jpg";
+    var wxDesc = "贫道掐指一算，您这一年没少事儿啊。";
+    var url = encodeURIComponent(location.href.split('#')[0]);
+    $.ajax({
+        type: "POST",
+        url: 'http://h5.whaledream.com/GetWX/index.php',
+        dataType: "json",
+        data: "url=" + url,
+        async: false,
+        success: function(data) {
+            wx.config({
+                debug: false,
+                appId: data.appId,
+                timestamp: data.timestamp,
+                nonceStr: data.nonceStr,
+                signature: data.signature,
+                jsApiList: [
+                    "onMenuShareTimeline",
+                    "onMenuShareAppMessage"
+                ]
+            });
+            wx.ready(function() {
+                wx.onMenuShareTimeline({
+                    debug: false,
+                    title: wxTitle, // 分享标题
+                    link: wxLink, // 分享链接
+                    imgUrl: imgUrl, // 分享图标
+                    success: function() {
+                        // 用户确认分享后执行的回调函数
+                    },
+                    cancel: function() {
+                        // 用户取消分享后执行的回调函数
+                    }
+                });
+                wx.onMenuShareAppMessage({
+                    title: wxTitle, // 分享标题
+                    desc: wxDesc, // 分享描述
+                    link: wxLink, // 分享链接
+                    imgUrl: imgUrl, // 分享图标	
+                    success: function() {
+                        // 用户确认分享后执行的回调函数
+                    },
+                    cancel: function() {
+                        // 用户取消分享后执行的回调函数
+                    }
+                });
+                wx.error(function(res) {
+                    //alert(res.errMsg);
+                });
+            });
+        },
+        error: function() {}
+    });
+</script>
+
+</html>
